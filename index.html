@@ -9,58 +9,59 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<main>
 
-    <main>
-        <div id="left-container">
-            <h1>LOGO</h1>
-            <img src="" alt="">
-        </div>
+    <div id="left-container">
+        <h1 class="absolute">LOGO</h1>
+        <img src="img/3372215.png" alt="" id="img-left">
+    </div>
 
-        <div id="right-container">
-            <form action="">
-                <h2>Get started</h2>
+    <div id="right-container">
+        <form action="" id="form-sign-up">
+            <h2 class="mb-50">Get started</h2>
 
-                <div class="form-row">
-                    <div class="form-col">
-                        <div class="form-container">
-                            <label for="f-name">FIRST NAME</label>
-                            <input type="text" id="f-name">
-                        </div>
-        
-                        <div class="form-container">
-                            <label for="email">EMAIL</label>
-                            <input type="email" id="email">
-                        </div>
-    
-                        <div class="form-container">
-                            <label for="password">PASSWORD</label>
-                            <input type="password" id="password">
-                        </div>
+            <div class="form-row">
+                <div class="form-col mr-25">
+                    <div class="form-container">
+                        <label for="f-name">FIRST NAME</label>
+                        <input type="text" id="f-name">
                     </div>
     
-                    <div class="form-col">
-                        <div class="form-container">
-                            <label for="l-name">LAST NAME</label>
-                            <input type="text" id="l-name">
-                        </div>
-        
-                        <div class="form-container">
-                            <label for="phone-number">PHONE NUMBER</label>
-                            <input type="tel" id="phone-number">
-                        </div>
-    
-                        <div class="form-container">
-                            <label for="c-password">LAST NAME</label>
-                            <input type="password" id="c-password">
-                        </div>
+                    <div class="form-container">
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email">
+                    </div>
+
+                    <div class="form-container">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" id="password">
                     </div>
                 </div>
-                <button type="submit">CREATE ACCOUNT</button>
-            </form>
-        </div>
-    </main>
 
+                <div class="form-col ml-25">
+                    <div class="form-container">
+                        <label for="l-name">LAST NAME</label>
+                        <input type="text" id="l-name">
+                    </div>
     
+                    <div class="form-container">
+                        <label for="phone-number">PHONE NUMBER</label>
+                        <input type="tel" id="phone-number">
+                    </div>
+
+                    <div class="form-container">
+                        <label for="c-password">LAST NAME</label>
+                        <input type="password" id="c-password">
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" class="btn px-50">CREATE ACCOUNT</button>
+            Already have an account? Log in!
+        </form>
+    </div>
+    
+</main>
 <script src="js/script.js"></script>
 </body>
 </html>
