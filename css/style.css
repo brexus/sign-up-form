@@ -137,4 +137,53 @@ input {
     font-size: 0.9rem;
 }
 
+.scroll-down-icon {
+    position: absolute;
+    opacity: 0;
+}
 
+
+@media only screen and (max-width: 1000px) {
+    main {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #left-container {
+        width: 100%;
+        height: 100vh;
+    }
+
+    #right-container {
+        width: 100vw;
+        height: 1000px;
+    }
+
+    .form-row {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .mr-25 {
+        margin-right: 0;
+    }
+
+    .ml-25 {
+        margin-left: 0;
+    }
+
+    /* .mb-25 {
+        margin-bottom: 0;
+    } */
+
+    #img-left {
+        width: min(80vw, 500px);
+    }
+
+    .scroll-down-icon {
+        opacity: 100;
+        width: 80px;
+        bottom: 70px;
+    }
+
+}
