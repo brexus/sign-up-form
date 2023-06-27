@@ -3,6 +3,7 @@
 :root {
     --primary-color: rgb(179, 56, 56);
     --secondary-color: rgb(42, 42, 51);
+    --secondary-lighten-color: rgb(66, 66, 75);
 }
 
 * {
@@ -66,12 +67,23 @@ main {
     margin-bottom: 50px;
 }
 
-.form-container > label, .form-container > input {
+label, input {
     width: 100%;
+}
+
+input {
+    height: 40px;
+    background-color: var(--secondary-lighten-color);
+    border: 0;
+    border-radius: 2px;
 }
 
 .mb-50 {
     margin-bottom: 50px;
+}
+
+.mb-25 {
+    margin-bottom: 25px;
 }
 
 .mr-25 {
@@ -96,8 +108,8 @@ main {
     padding: 10px;
 }
 
-input {
-    border-radius: 5px;
-    /* border: 2px solid var(--primary-color); */
+.btn:hover {
+    /* background-color: rgb(var(--primary-color)); */
 }
+
 
