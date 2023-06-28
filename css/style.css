@@ -142,6 +142,10 @@ input {
     opacity: 0;
 }
 
+p {
+    margin-bottom: 0;
+}
+
 
 @media only screen and (max-width: 1000px) {
     main {
@@ -156,7 +160,11 @@ input {
 
     #right-container {
         width: 100vw;
-        height: 1000px;
+        height: auto;
+    }
+
+    #form-sign-up {
+        width: 100%;
     }
 
     .form-row {
