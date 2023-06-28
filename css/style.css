@@ -5,6 +5,8 @@
     --primary-lighten-color: rgb(216, 107, 107);
     --secondary-color: rgb(42, 42, 51);
     --secondary-lighten-color: rgb(66, 66, 75);
+    --success: rgb(6, 172, 20);
+    --error: rgb(206, 15, 15);
 }
 
 * {
@@ -40,6 +42,19 @@ main {
     width: min(35vw, 500px);
 }
 
+.absolute-logo {
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.scroll-down-icon {
+    position: absolute;
+    opacity: 0;
+}
+
 /* ================================================== */
 /* RIGHT CONTAINER */
 
@@ -53,7 +68,11 @@ main {
     align-items: center;
 }
 
-#form-sign-up {
+/* ==================== */
+/* FORM */
+
+#form {
+    width: 100%;
     padding: 50px;
 }
 
@@ -66,47 +85,43 @@ main {
     width: 100%;
 }
 
-label {
-    font-size: 0.8rem;
-    width: 100%;
+.input-control {
+    display: flex;
+    flex-direction: column;
 }
 
-input {
+.input-control input {
     width: 100%;
     height: 40px;
     background-color: var(--secondary-lighten-color);
-    border: 0;
-    border-radius: 2px;
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
     color: white;
-    padding: 0 12px;
+    padding: 10px;
 }
 
-.mb-50 {
-    margin-bottom: 50px;
+.input-control input:focus {
+    outline: 0;
 }
 
-.mb-25 {
-    margin-bottom: 25px;
+.input-control.success input {
+    border-color: var(--success);
 }
 
-.mb-10 {
-    margin-bottom: 10px;
+.input-control.error input {
+    border-color: var(--error);
 }
 
-.mr-25 {
-    margin-right: 25px;
+.error {
+    font-style: italic;
+    font-size: 0.8rem;
+    color: rgb(255, 0, 0);
+    height: 25px;
 }
 
-.ml-25 {
-    margin-left: 25px;
-}
-
-.absolute-logo {
-    position: absolute;
-    top: 10px;
-    left: 30px;
-    cursor: pointer;
-    font-weight: 700;
+label {
+    font-size: 0.8rem;
+    width: 100%;
 }
 
 .btn {
@@ -135,6 +150,17 @@ input {
     font-weight: bolder;
 }
 
+.fs-smaller {
+    font-size: 0.9rem;
+}
+
+/* ==================================================== */
+/* GENERAL STYLES */
+
+p {
+    margin-bottom: 0;
+}
+
 blockquote {
     line-height: 20px;
     background-color: var(--secondary-lighten-color);
@@ -142,20 +168,26 @@ blockquote {
     padding: 20px;
 }
 
-.fs-smaller {
-    font-size: 0.9rem;
+.mb-50 {
+    margin-bottom: 50px;
 }
 
-
-
-.scroll-down-icon {
-    position: absolute;
-    opacity: 0;
+.mb-25 {
+    margin-bottom: 25px;
 }
 
-p {
-    margin-bottom: 0;
+.mb-10 {
+    margin-bottom: 10px;
 }
+
+.mr-25 {
+    margin-right: 25px;
+}
+
+.ml-25 {
+    margin-left: 25px;
+}
+
 
 @media only screen and (max-width: 1000px) {
     main {
@@ -202,5 +234,9 @@ p {
         opacity: 100;
         width: 80px;
         bottom: 70px;
+    }
+
+    #form > h2 {
+        text-align: center;
     }
 }
