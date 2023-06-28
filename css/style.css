@@ -131,9 +131,22 @@ input {
     cursor: pointer;
 }
 
+.bolder {
+    font-weight: bolder;
+}
+
+blockquote {
+    line-height: 20px;
+    background-color: var(--secondary-lighten-color);
+    border-radius: 5px;
+    padding: 20px;
+}
+
 .fs-smaller {
     font-size: 0.9rem;
 }
+
+
 
 .scroll-down-icon {
     position: absolute;
