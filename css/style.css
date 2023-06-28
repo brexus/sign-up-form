@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;900&display=swap");
 
 :root {
     --primary-color: rgb(179, 56, 56);
@@ -13,7 +13,7 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     color: white;
 }
 
@@ -23,7 +23,6 @@ main {
     width: 100vw;
     height: 100vh;
 }
-
 
 /* ================================================== */
 /* LEFT CONTAINER */
@@ -41,7 +40,6 @@ main {
     width: min(35vw, 500px);
 }
 
-
 /* ================================================== */
 /* RIGHT CONTAINER */
 
@@ -55,7 +53,7 @@ main {
     align-items: center;
 }
 
-#form-sign-up{
+#form-sign-up {
     padding: 50px;
 }
 
@@ -146,7 +144,6 @@ p {
     margin-bottom: 0;
 }
 
-
 @media only screen and (max-width: 1000px) {
     main {
         flex-direction: column;
@@ -193,5 +190,4 @@ p {
         width: 80px;
         bottom: 70px;
     }
-
 }
