@@ -12,24 +12,25 @@
 <main>
 
     <div id="left-container">
-        <h1 class="absolute">LOGO</h1>
+        <h1 class="absolute-logo">LOGO</h1>
         <img src="img/3372215.png" alt="" id="img-left">
+        <img src="img/Scroll-Down-Arrow-White.png" alt="" class="scroll-down-icon">
     </div>
 
     <div id="right-container">
         <form action="" id="form-sign-up">
-            <h2 class="mb-50">Get started</h2>
+            <h2 class="mb-50">Sign in</h2>
 
             <div class="form-row">
-                <div class="form-col mr-25">
+                <div class="form-col mb-25 mr-25" id="form-col-left">
                     <div class="form-container mb-25">
                         <label for="f-name">FIRST NAME</label>
-                        <input type="text" id="f-name">
+                        <input type="text" id="f-name" placeholder="Jan">
                     </div>
     
                     <div class="form-container mb-25">
                         <label for="email">EMAIL</label>
-                        <input type="email" id="email">
+                        <input type="email" id="email" placeholder="nowak@poczta.pl">
                     </div>
 
                     <div class="form-container mb-25">
@@ -38,26 +39,26 @@
                     </div>
                 </div>
 
-                <div class="form-col ml-25">
+                <div class="form-col mb-25 ml-25">
                     <div class="form-container mb-25">
                         <label for="l-name">LAST NAME</label>
-                        <input type="text" id="l-name">
+                        <input type="text" id="l-name" placeholder="Nowak">
                     </div>
     
                     <div class="form-container mb-25">
                         <label for="phone-number">PHONE NUMBER</label>
-                        <input type="tel" id="phone-number">
+                        <input type="tel" id="phone-number" placeholder="669 385 504">
                     </div>
 
                     <div class="form-container mb-25">
-                        <label for="c-password">LAST NAME</label>
+                        <label for="c-password">CONFIRM PASSWORD</label>
                         <input type="password" id="c-password">
                     </div>
                 </div>
             </div>
 
-            <button type="submit" class="btn px-50">Create account</button>
-            Already have an account? Log in!
+            <button type="submit" class="btn px-50 mb-10">Create account</button>
+            <p class="fs-smaller">Already have an account? <span class="log-in">Log in!</span></p>
         </form>
     </div>
     
