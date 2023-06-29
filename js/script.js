@@ -3,14 +3,20 @@
 
 const mediaQuery = window.matchMedia("(max-width: 1000px)");
 
-if (mediaQuery.matches) {
-    document.getElementById("form-col-left").classList.remove("mb-25");
-    document.querySelector(".scroll-down-icon").hidden = false;
-}
+// if (mediaQuery.matches) {
+//     document.getElementById("form-col-left").classList.remove("mb-25");
+//     document.querySelector(".scroll-down-icon").hidden = false;
+// }
 
-// media.addEventListener('change', (e) => {
-
-// });
+window.addEventListener('resize', () => {
+    if (window.matchMedia("(max-width: 1000px)").matches) {
+        document.getElementById("form-col-left").classList.remove("mb-25");
+        document.querySelector(".scroll-down-icon").hidden = false;
+    } else {
+        document.querySelector(".scroll-down-icon").hidden = true;
+        document.getElementById("form-col-left").classList.add("mb-25");
+    }
+});
 
 
 
