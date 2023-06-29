@@ -5,7 +5,12 @@ const mediaQuery = window.matchMedia("(max-width: 1000px)");
 
 if (mediaQuery.matches) {
     document.getElementById("form-col-left").classList.remove("mb-25");
+    document.querySelector(".scroll-down-icon").hidden = false;
 }
+
+// media.addEventListener('change', (e) => {
+
+// });
 
 
 
@@ -73,16 +78,14 @@ function checkInputs() {
     if (passwordValue === "" || passwordValue == null) {
         setErrorFor(password, 'Password cannot be blank');
     } else if (passwordValue.length < 8) {
-        setErrorFor(password, 'Password must have minimum 8 characters');
+        setErrorFor(password, 'Confirm password must have be longer than 7 characters');
     } else {
         setSuccessFor(password);
     }
 
     // Confirm Password
-    if (confirmPasswordValue === "" || confirmPasswordValue == null) {
-        setErrorFor(confirmPassword, 'Confirm password cannot be blank');
-    } else if (confirmPassword.value.length < 8) {
-        setErrorFor(confirmPassword, 'Confirm password must have minimum 8 characters');
+    if (!(confirmPasswordValue === passwordValue)) {
+        setErrorFor(confirmPassword, 'Password not does not match');
     } else {
         setSuccessFor(confirmPassword);
     }
