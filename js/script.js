@@ -90,7 +90,9 @@ function checkInputs() {
     }
 
     // Confirm Password
-    if (!(confirmPasswordValue === passwordValue)) {
+    if (confirmPasswordValue === "" || confirmPasswordValue == null) {
+        setErrorFor(confirmPassword, 'Password cannot be blank');
+    } else if (!(confirmPasswordValue === passwordValue)) {
         setErrorFor(confirmPassword, 'Password not does not match');
     } else {
         setSuccessFor(confirmPassword);
