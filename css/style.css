@@ -158,6 +158,10 @@ label {
     accent-color: var(--primary-color);
 }
 
+.input-checkbox-control > input.success-checkbox:checked {
+    accent-color: green;
+}
+
 
 
 /* ==================================================== */
