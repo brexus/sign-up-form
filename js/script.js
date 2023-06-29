@@ -9,7 +9,7 @@ const email = document.getElementById('email');
 const phoneNumber = document.getElementById('phone-number');
 const password = document.getElementById('password');
 const confirmPassword = document.getElementById('c-password');
-const termsSignUp = document.getElementById('terms-sign-up');
+const termsPolicy = document.getElementById('terms-policy');
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -77,12 +77,14 @@ function checkInputs() {
         setSuccessFor(confirmPassword);
     }
 
-    //     // Checkbox
-    // if (!termsSignUp.check == true) {
-    //     setErrorFor(confirmPassword, 'Password cannot be blank');
-    // } else {
-    //     setSuccessFor(confirmPassword);
-    // }
+        // Checkbox
+    if (!termsPolicy.checked == true) {
+        document.getElementById('error-message-checkbox').innerHTML = 'It must be marked';
+        termsPolicy.className = "input-checkbox-control";
+    } else {
+        document.getElementById('error-message-checkbox').innerHTML = '';
+        termsPolicy.className = "input-checkbox-control success-checkbox";
+    }
 }
 
 function setErrorFor(input, message) {
