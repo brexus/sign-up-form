@@ -220,13 +220,19 @@ blockquote {
     }
 
     #left-container {
-        width: 100%;
-        height: 100vh;
+        /* width: 100%; */
+        /* height: 50px; */
+
+    }
+
+    #img-left {
+        display: none;
     }
 
     #right-container {
         width: 100vw;
         height: auto;
+        padding-top: 50px;
     }
 
     #form-sign-up {
