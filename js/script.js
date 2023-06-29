@@ -1,25 +1,4 @@
 
-// Media Query (max-width: 1000px)
-
-const mediaQuery = window.matchMedia("(max-width: 1000px)");
-
-// if (mediaQuery.matches) {
-//     document.getElementById("form-col-left").classList.remove("mb-25");
-//     document.querySelector(".scroll-down-icon").hidden = false;
-// }
-
-window.addEventListener('resize', () => {
-    if (window.matchMedia("(max-width: 1000px)").matches) {
-        document.getElementById("form-col-left").classList.remove("mb-25");
-        document.querySelector(".scroll-down-icon").hidden = false;
-    } else {
-        document.querySelector(".scroll-down-icon").hidden = true;
-        document.getElementById("form-col-left").classList.add("mb-25");
-    }
-});
-
-
-
 // Validation
 
 const form = document.getElementById('form');
@@ -30,7 +9,7 @@ const email = document.getElementById('email');
 const phoneNumber = document.getElementById('phone-number');
 const password = document.getElementById('password');
 const confirmPassword = document.getElementById('c-password');
-
+const termsSignUp = document.getElementById('terms-sign-up');
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -97,6 +76,13 @@ function checkInputs() {
     } else {
         setSuccessFor(confirmPassword);
     }
+
+    //     // Checkbox
+    // if (!termsSignUp.check == true) {
+    //     setErrorFor(confirmPassword, 'Password cannot be blank');
+    // } else {
+    //     setSuccessFor(confirmPassword);
+    // }
 }
 
 function setErrorFor(input, message) {
