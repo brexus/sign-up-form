@@ -111,8 +111,12 @@ main {
 .input-control.error input {
     border-color: var(--error);
 }
+  
+input:focus:invalid {
+    box-shadow: none;
+}
 
-.error {
+.error-message {
     font-style: italic;
     font-size: 0.8rem;
     color: rgb(255, 0, 0);
